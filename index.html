@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adriano, développeur full-stack et mobile à Yaoundé</title>
+  <meta name="description" content="Portfolio d'Adriano, étudiant en génie logiciel à Yaoundé. Applications web et mobile avec Laravel, React et Flutter : HorizonApp, application météo et plus.">
+  <meta name="theme-color" content="#0a0a12">
+  <meta property="og:title" content="Adriano, développeur full-stack et mobile">
+  <meta property="og:description" content="Applications web et mobile avec Laravel, React et Flutter. Basé à Yaoundé, Cameroun.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Adriano, retour en haut">Adriano<span class="dot" aria-hidden="true"></span></a>
+      <nav aria-label="Navigation principale">
+        <ul>
+          <li><a href="#projets">Projets</a></li>
+          <li class="hide-sm"><a href="#services">Services</a></li>
+          <li class="hide-sm"><a href="#competences">Compétences</a></li>
+          <li class="hide-sm"><a href="#parcours">Parcours</a></li>
+          <li><a class="nav-cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- Accueil -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="status reveal"><span class="pulse" aria-hidden="true"></span>Disponible pour un stage et des missions</p>
+        <h1 class="reveal">Je crée des applications web et mobile, de la base de données à l'écran.</h1>
+        <p class="lead reveal">Étudiant en génie logiciel à Yaoundé. Je développe des outils de gestion, des sites et des applications mobiles avec Laravel, React et Flutter.</p>
+        <div class="actions reveal">
+          <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+          <a class="btn btn-ghost" href="#contact">Me contacter</a>
+        </div>
+        <ul class="meta reveal" aria-label="Informations rapides">
+          <li>Yaoundé, Cameroun</li>
+          <li>Laravel</li>
+          <li>React</li>
+          <li>Flutter</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projets -->
+    <section class="section" id="projets" aria-labelledby="t-projets">
+      <div class="wrap">
+        <h2 id="t-projets" class="reveal"><span class="num">01</span>Projets</h2>
+
+        <article class="project reveal">
+          <div class="project-text">
+            <p class="kicker">Application de gestion, web et mobile</p>
+            <h3>HorizonApp</h3>
+            <p>Une plateforme de gestion pour une PME : ventes, stock, impressions et formations. Réalisée en 7 jours pour un test technique de recrutement, puis enrichie d'un module d'impressions.</p>
+            <ul class="points">
+              <li>4 rôles (super admin, vendeur, agent d'impression, formateur), chacun avec son propre accès</li>
+              <li>Point de vente avec facture en PDF, alerte de stock bas et export CSV des ventes</li>
+              <li>Suivi des commandes d'impression, de « en attente » à « livré »</li>
+              <li>Formations avec présences et attestation en PDF</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Laravel 12</li><li>React</li><li>Tailwind CSS</li><li>MySQL</li><li>Sanctum</li><li>Flutter</li>
+            </ul>
+            <div class="links">
+              <a class="btn btn-ghost" href="https://github.com/Adrien2008/horizonapp" target="_blank" rel="noopener">Voir le code sur GitHub<span class="sr"> (nouvel onglet)</span></a>
+            </div>
+          </div>
+          <div class="media media-shot" aria-hidden="false">
+            <div class="fallback" aria-hidden="true">
+              <div class="window">
+                <div class="window-bar"><i></i><i></i><i></i></div>
+                <div class="window-body">
+                  <p class="window-title">HorizonApp</p>
+                  <ul>
+                    <li>Ventes et factures PDF</li>
+                    <li>Stock et fournisseurs</li>
+                    <li>Commandes d'impression</li>
+                    <li>Formations et présences</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <img class="shot shot-main" src="assets/horizonapp-1.png" alt="Tableau de bord de HorizonApp" loading="lazy" onerror="this.remove()">
+            <img class="shot shot-inset" src="assets/horizonapp-2.png" alt="Point de vente de HorizonApp" loading="lazy" onerror="this.remove()">
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-text">
+            <p class="kicker">Application web</p>
+            <h3>Météo</h3>
+            <p>Une application météo simple et rapide. On cherche une ville ou on utilise sa position, et on voit tout de suite le temps qu'il fait.</p>
+            <ul class="points">
+              <li>Recherche de ville et géolocalisation</li>
+              <li>Conditions du moment : température, ressenti, indice UV, humidité, vent</li>
+              <li>Prévisions sur 7 jours</li>
+              <li>Interface en français, pensée pour le téléphone</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Application web</li><li>API météo</li><li>Vercel</li>
+            </ul>
+            <div class="links">
+              <a class="btn btn-primary" href="https://weather-app-three-sigma-94.vercel.app" target="_blank" rel="noopener">Voir l'application<span class="sr"> (nouvel onglet)</span></a>
+              <a class="btn btn-ghost" id="meteo-code" href="#" target="_blank" rel="noopener" hidden>Voir le code<span class="sr"> (nouvel onglet)</span></a>
+            </div>
+          </div>
+          <div class="media media-phones">
+            <img src="assets/meteo-1.jpg" width="720" height="1322" alt="Écran d'accueil de l'application météo : Yaoundé, 28 degrés, ciel dégagé" loading="lazy">
+            <img src="assets/meteo-2.jpg" width="720" height="1322" alt="Humidité, vent, indice UV et prévisions sur 7 jours" loading="lazy">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services" aria-labelledby="t-services">
+      <div class="wrap">
+        <h2 id="t-services" class="reveal"><span class="num">02</span>Ce que je peux faire pour vous</h2>
+        <div class="cards">
+          <div class="card reveal">
+            <h3>Site vitrine</h3>
+            <p>Un site clair avec vos services, vos horaires, vos photos et un bouton pour vous écrire sur WhatsApp. Vos clients vous trouvent sur Google, pas seulement sur Facebook.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Application de gestion</h3>
+            <p>Ventes, stock, factures PDF, comptes par rôle, tableau de bord : le même type d'outil que HorizonApp, adapté à votre activité.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Application mobile</h3>
+            <p>Une application Android avec Flutter, reliée à votre système, pour suivre votre activité depuis le téléphone.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section class="section" id="competences" aria-labelledby="t-comp">
+      <div class="wrap">
+        <h2 id="t-comp" class="reveal"><span class="num">03</span>Compétences</h2>
+        <div class="skills">
+          <div class="skill reveal">
+            <h3>Front-end</h3>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Tailwind CSS</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Back-end</h3>
+            <ul class="chips"><li>PHP</li><li>Laravel</li><li>API REST</li><li>Sanctum</li><li>MySQL</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Mobile</h3>
+            <ul class="chips"><li>Flutter</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Outils</h3>
+            <ul class="chips"><li>Git</li><li>GitHub</li><li>Vercel</li></ul>
+          </div>
+          <div class="skill skill-wide reveal">
+            <h3>En apprentissage</h3>
+            <ul class="chips chips-soft"><li>TypeScript</li><li>Node.js</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parcours -->
+    <section class="section" id="parcours" aria-labelledby="t-parcours">
+      <div class="wrap">
+        <h2 id="t-parcours" class="reveal"><span class="num">04</span>Parcours</h2>
+        <ol class="timeline">
+          <li class="reveal">
+            <h3>Stage de développeur</h3>
+            <p class="where">SERDI Cameroun</p>
+            <p>Conception et développement d'une application de messagerie full-stack avec React et Laravel.</p>
+          </li>
+          <li class="reveal">
+            <h3>Étudiant en génie logiciel</h3>
+            <p class="where">ISSAM, Cameroun</p>
+            <p>2<sup>e</sup> année. Développement web et mobile, bases de données, algorithmique.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="t-contact">
+      <div class="wrap">
+        <h2 id="t-contact" class="reveal"><span class="num">05</span>Contact</h2>
+        <p class="contact-lead reveal">Un projet de site ou d'application, ou une offre de stage ? Écrivez-moi.</p>
+        <ul class="contact-list reveal" id="contact-list">
+          <li id="c-github"><a class="btn btn-ghost" href="https://github.com/Adrien2008" target="_blank" rel="noopener">GitHub<span class="sr"> (nouvel onglet)</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>&copy; <span id="annee">2026</span> Tchinda Tchoumo Gracien Adriano. Yaoundé, Cameroun.</p>
+      <p><a href="#top">Retour en haut</a></p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
